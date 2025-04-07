@@ -1,0 +1,400 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS Reset */
+
+
+/* google fonts */
+.rubik-moonrocks-regular {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catamaran {
+  font-family: "Catamaran", sans-serif;
+  font-style: normal;
+}
+
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+}
+
+
+/* colors */
+:root {
+    --red: #db2b39;
+    --blue: #29335c;
+    --blueswitch: #29335c;
+    --yellow: #f3a712;
+    --yellowswitch: #f3a712;
+    --tan: #f0cea0;
+    --tanswitch: #f0cea0;
+    --gray: #534d41;
+}
+
+/* Dark mode 
+I ran into a problem where like halfway through I realized the light/dark mode requirement
+I didn't want to redo the entire color scheme
+so instead I chose instances where the light mode color would switch to the dark mode color
+I labeled these instances "switch" */
+body.dark-mode {
+  --blueswitch: #f0cea0;
+  --yellowswitch: #534d41;
+  --tanswitch: #29335c;
+}
+
+
+/* basics */
+html {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  width: 1280px;
+  max-width: 100%;
+  background-color: var(--tanswitch);
+}
+
+header {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  color: var(--tan);
+  background-color: var(--red);
+}
+
+/* navigation menu */
+nav {
+  display: flex;
+  justify-content: center;
+  color: var(--blueswitch);
+  background-color: var(--tanswitch);
+}
+
+nav h2 {
+  display: none;
+}
+
+nav li {
+  display: inline-flex;
+}
+
+nav a {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--blueswitch);
+  padding: 25px;
+}
+
+nav a:hover {
+  color: var(--tanswitch);
+  background-color: var(--blueswitch);
+}
+
+nav button {
+  border: none;
+  display: contents;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--blueswitch);
+  padding: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--tanswitch);
+  background-color: var(--blueswitch);
+}
+
+/* more basics */
+h1 {
+  text-transform: uppercase;
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: "Catamaran", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+p {
+  font-size: medium;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+
+/* about section */
+#about h2 {
+  color: var(--red);
+}
+
+#about h4 {
+  text-align: center;
+  text-shadow: 2px 2px 3px var(--tan);
+}
+
+#about p {
+  padding: 40px;
+  margin: 0 200px;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--tan);
+}
+
+#about div p {
+  padding: 20px;
+  margin: 0 200px;
+  text-align: center;
+}
+
+/* img from Pexels (stock, free to use) 
+I thought it'd be cool to see some "red rocks"*/
+.backgroundimg {
+  background-image: url(images/aboutbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+
+/* band lineup section */
+.bands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px 30px;
+}
+
+.bands h3 {
+  font-weight: bolder;
+  color: var(--yellowswitch);
+}
+
+.bands h3, .bands h4, .bands h5 {
+  padding: 10px;
+}
+
+#lineup {
+  background-color: var(--red);
+  color: var(--tanswitch);
+  padding: 30px;
+}
+
+#lineup h2 {
+  background-color: var(--red);
+  color: var(--gray);
+}
+
+#days {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*tickets (product display)*/
+#tickets {
+  max-width: 100%;
+  background-color: var(--tanswitch);
+  padding: 20px;
+  text-align: center;
+  color: var(--blueswitch)
+}
+
+#tixbutton {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  padding: 10px 20px;
+  background-color: var(--red);
+  color: var(--tan);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons:hover {
+  background-color: var(--blueswitch);
+  color: var(--tanswitch);
+}
+
+.tixinfo.product {
+  display: none;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--tanswitch);
+}
+
+#single {
+  display: block;
+}
+
+.tixinfo.active {
+  display: block;
+}
+
+.tixinfo img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+
+/* win (guessing game section) */
+#win {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+#win p {
+  padding: 20px;
+}
+
+input[type="number"] {
+  width: 200px;
+  padding: 15px;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--red);
+}
+
+
+/* contact section */
+#contact {
+  background: var(--tanswitch);
+  color: var(--blueswitch);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+#contact div {
+  padding: 10px;
+}
+
+#contact label {
+  padding-bottom: 10px;
+}
+
+.contactsection input,
+.contactsection textarea {
+  width: calc(100% - 22px); 
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.contactsection textarea {
+  height: 100px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+#submissionMessage {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--gray);
+  color: var(--red);
+}

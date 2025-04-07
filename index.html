@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Project GIT 417</title>
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <h1>Red Rock Fest 2024</h1>
+        </header>
+
+        <nav>
+            <h2>Main Navigation</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#lineup">Lineup</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#win">Win</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Light/Dark Mode</button></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about">
+                <div class="backgroundimg">
+                    <h2>What Is Red Rock Fest?</h2>
+
+                    <p>Red Rock Fest is an annual music festival that takes place in the invigorating red desert rock formations of southern Utah. Featuring the best rock and metal bands of the modern era, you're guaranteed to have a good time!</p>
+                    <p>This year's event will be hosted at Red Cliff's Adventure Lodge. Prepare for a weekend of incredible bands surrounded by surreal scenery!</p>
+                    <p>Enjoy three jam-packed days of awesome artists, activities, and vendors. Mosh in the pit during the sets and explore local artists and art shows as you walk between stages. Stay at the lodge or camp under the vast stars of the desert sky.</p>
+                    
+                    <div>
+                        <h4>Dates:</h4>
+                        <p>Friday, September 20th, 2024 - Sunday, September 22nd, 2024</p>
+                    </div>
+      
+                    <div>
+                        <h4>Address:</h4>
+                        <p>Red Cliff's Adventure Lodge</p>
+                        <p>Mile Post, 14 UT-128</p>
+                        <p>Moab, UT 84532</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="lineup">
+              <h2>Who's Playing?</h2>
+
+              <div id="days">
+                <div class="bands">
+                    <h3>Friday</h3>
+                    <h4>Queens Of The Stone Age | Tool | Red Hot Chili Peppers</h4>
+                    <h5>Polaris | Wage War | Arctic Monkeys</h5>
+                    <p>Kyuss | Dreamwake | Asleep At The Helm | Against The Sun | Imminence</p>
+                </div>
+                  
+                <div class="bands">
+                    <h3>Saturday</h3>
+                    <h4>Foo Fighters | Stone Temple Pilots | Gojira</h4>
+                    <h5>Architects | Parkway Drive | My Morning Jacket</h5>
+                    <p>Fu Manchu | Fall Out Boy | Royal Blood | Sullivan King | Of Mice & Men | Alienist</p>
+                </div>
+                  
+                <div class="bands">
+                    <h3>Sunday</h3>
+                    <h4>King Gizzard & The Lizard Wizard | Green Day | Turnstile</h4>
+                    <h5>Psychedelic Porn Crumpets | Mastodon | Bad Omens</h5>
+                    <p>Alpha Wolf | Blessthefall | Clutch | Wallows | Paleface | While She Sleeps</p>
+                </div>
+              </div>
+            </section>
+
+            
+            <section id="tickets">
+                <h2>Buy Your Tickets Here!</h2>
+                <p>Don't miss out on the best festival in the desert!</p>
+
+                <div id="tixcontent">
+                    <div class="tixinfo product" id="single">
+                        <h3>Single Day Pass</h3>
+
+                        <img src="images/singleday.png" alt="Single Day Pass image">
+
+                        <p>This pass gets you into the festival on any day of your choosing! Access is only allowed for one day. Parking is included.</p>
+                    </div>
+
+                    <div class="tixinfo product" id="two">
+                        <h3>Two Day Pass</h3>
+
+                        <img src="images/twoday.png" alt="Two Day Pass image">
+
+                        <p>This pass gets you into the festival on any two days of your choice! Access is only allowed for two days. Parking is included.</p>
+                    </div>
+
+                    <div class="tixinfo product" id="three">
+                        <h3>Three Day Pass</h3>
+
+                        <img src="images/threeday.png" alt="Three Day Pass image">
+
+                        <p>This pass gets you into the festival all weekend! Enjoy the entire festival in style and with peace of mind, knowing you won't miss out on any of the events. Access is allowed on all festival days. Parking is included.</p>
+                    </div>
+
+                    <div class="tixinfo product" id="vip">
+                        <h3>VIP Pass</h3>
+
+                        <img src="images/vip.png" alt="VIP Pass image">
+
+                        <p>This pass gets you into the festival all weekend and so much more! Enjoy a speedy VIP entry line, VIP parking, VIP food and drink vendors, and a chance for a meet-and-greet with your favorite band. Discounted merch is available as well! Access is allowed on all festival days. VIP parking is included.</p>
+                    </div>
+
+                    <div class="tixinfo product" id="camping">
+                        <h3>Camping Pass</h3>
+
+                        <img src="images/camp.png" alt="Camping Pass image">
+
+                        <p>This pass gets you into the campground for all three days of the festival! This is not an entry pass for the festival; this pass only allows access to the campground. Parking is included.</p>
+                    </div>
+
+                    <div id="tixbutton">
+                        <button class="buttons" data-product-id="single">Single Day Pass</button>
+                        <button class="buttons" data-product-id="two">Two Day Pass</button>
+                        <button class="buttons" data-product-id="three">Three Day Pass</button>
+                        <button class="buttons" data-product-id="vip">VIP Pass</button>
+                        <button class="buttons" data-product-id="camping">Camping Pass</button>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="win">
+                <h2>Win A Free Pass To Red Rock Fest 2024!</h2>
+                <p>Play this free game to win a free VIP Pass to Red Rock Fest 2024! This pass will grant you VIP access to all three days of the festival!</p>
+                <p>The way the game works is simple. The computer is thinking of a random number between 1 and 10. If you can guess this number correctly, you win a free pass!</p>
+                <p>Give it a try!</p>
+
+                <input type="number" id="userGuess" min="1" max="10">
+                <button onclick="guessNumber()">Are you a winner?</button>
+                <p id="result"></p>
+            </section>
+    
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <div class="contactsection">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span class="error" id="firstNameError"></span>
+                    </div>
+
+                    <div class="contactsection">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <span class="error" id="lastNameError"></span>
+                    </div>
+
+                    <div class="contactsection">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone">
+                        <span class="error" id="phoneError"></span>
+                    </div>
+
+                    <div class="contactsection">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="contactsection">
+                        <label for="comments">Comments*</label>
+                        <textarea id="comments" name="comments" required></textarea>
+                        <span class="error" id="commentsError"></span>
+                    </div>
+
+                    <div class="contactsection">
+                        <label>Preferred Contact Method*</label>
+                        <div>
+                            <input type="radio" id="contactByPhone" name="contactMethod" value="phone" required>
+                            <label for="contactByPhone">Phone</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="contactByEmail" name="contactMethod" value="email" required>
+                            <label for="contactByEmail">Email</label>
+                        </div>
+                        <span class="error" id="contactMethodError"></span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="submissionMessage"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p><small>Copyright Red Rock Fest 2024</small></p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
